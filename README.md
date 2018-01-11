@@ -6,9 +6,11 @@ The included scripts are for interaction with Dustin Smiths [python-wrapper](htt
 
 ## Parsing examples
 Start the coreNLP server:
+
 ``` > python2 coreNLP.py ```
 
 Run the gen_dep_lemma.py script:
+
 ``` > python2 gen_dep_lemma.py linesWithAnnotations110716.json ```
 
 
