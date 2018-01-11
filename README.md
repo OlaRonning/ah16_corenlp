@@ -13,4 +13,6 @@ Run the gen_dep_lemma.py script:
 
 ``` > python2 gen_dep_lemma.py linesWithAnnotations110716.json ```
 
+Dependencies and lemma are written to dep_lemma.jsons
 
+Use dep_lemma.jsons with the -d flag for makeFeats_withCataphora.py
