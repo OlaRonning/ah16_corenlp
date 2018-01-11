@@ -17,6 +17,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+"""
+This script has been modified from the orignal script to output dependency indecies
+"""
 
 import json
 import optparse
@@ -104,6 +107,7 @@ def parse_parser_results(text):
             else:
                 split_entry = re.split("\(|, ", line[:-1])
                 if len(split_entry) == 3:
+                    "Doesn't remove suffix numeric ID"
                     rel, left, right = map(lambda x: x, split_entry)
                     sentence['dependencies'].append(tuple([rel,left,right]))
         
